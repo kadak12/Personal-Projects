@@ -1,0 +1,264 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+
+  }
+  .rocket_img
+  {
+    transform: rotate(-53deg);
+    width: 100px;
+    height: auto;   
+    color: blue;
+    margin-left: 35%;
+    margin-right: 35%;
+    align-content: center;
+    margin-top: 450px;
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    color: red;
+  }
+.nums
+{
+    font-size: 50px;
+    color: green;
+    margin: 50px;
+    animation: blinker 1s linear infinite;
+    
+
+}
+.gameboard
+{
+    width:200px;
+    height :auto;
+}
+.game
+{
+    float: left;
+    margin-left: 20px;
+     /* border: 1px pink solid; */
+    text-align: right;
+    height: 10% ;
+}
+.rock{
+   width: 100%;
+   display: block;
+  justify-content: center;
+  align-items: center;
+}
+.bet_button
+{
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    border: 5px solid black;
+    background-color: orange;
+    font-size: 40px;
+    
+        box-shadow: -5px 5px #888888;
+      
+
+}
+
+.cash_out_button
+{
+    height: 140px;
+    width: 140px;    
+    border-radius: 100%;
+    border: 5px solid black;
+    background-color: red;
+    font-size: 40px;
+    box-shadow: 5px 5px #888888;
+
+
+}
+
+.stop_sign
+{
+    width: 100px;
+    justify-content: center;
+}
+img {
+    width: 40px;
+    height: auto;
+    justify-content: center;
+    /* margin-right: 200px;
+    margin-left: 200px; */
+    
+  }
+  .buttons
+  {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    border: 2px solid black;
+  }
+
+
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+/* 
+.betbut 
+{
+    fontSize: "25",
+    fontWeight: "bold"
+  }
+  .stopbut 
+  {
+    fontSize: "25",
+    fontWeight: "bold"
+  }
+  .touchview 
+  {
+    flex: 2,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    width : "100%",
+    position: "absolute", //Here is the trick
+    bottom: 0
+  }
+
+  roundButton1 
+  {
+    width: "130px",
+    height: "130px",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "10",
+    marginHorizontal: "10",
+    borderRadius: "100%",
+    backgroundColor: "orange",
+    position: "relative",
+    marginRight: "5%"
+  }
+  roundButton2 
+  {
+    width: "130px",
+    height: "130px",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "10",
+    marginHorizontal: "10",
+    borderRadius: "100%",
+    backgroundColor: "red",
+    position: "relative",
+    marginLeft: "5%"
+  }
+  score 
+  {
+    color: "white",
+    fontSize: 30,
+    marginVertical: 40,
+    textAlign: "center"
+  }
+
+  game
+   {
+    backgroundColor: "black",
+    color: "white",
+    height: "80%",
+    width: "90%",
+    marginHorizontal: "5%"
+  } */
+
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .container {
+    height: 2em;
+    width: 21.25em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    color: #ffffff;
+    /* border: 1px solid white; */
+  }
+  p.letter {
+    font-size: 3.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .letter-M {
+    left: 0.2em;
+  }
+  .letter-N {
+    right: 0.2em;
+  }
+  .moon {
+    background-color: #f5f5f5;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05),
+      0 0 0 1.2em rgba(255, 255, 255, 0.05), 0 0 0 1.8em rgba(255, 255, 255, 0.05);
+  }
+  .moon:after {
+    position: absolute;
+    content: "";
+    background-color: #e6e6e6;
+    height: 0.9em;
+    width: 0.9em;
+    border-radius: 50%;
+    top: 3.75em;
+    left: 1.25em;
+    box-shadow: 0.9em -2.1em 0 0.2em #e6e6e6, 1.5em -0.3em 0 -0.06em #e6e6e6;
+  }
+  .orbit {
+    height: 12.75em;
+    width: 12.75em;
+    border-radius: 50%;
+    position: absolute;
+    left: -3em;
+    bottom: -3em;
+    animation: spin 8s infinite linear;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .orbit p {
+    position: absolute;
+    font-size: 3.5em;
+    top: 0.25em;
+    left: 0.25em;
+  }
+  @media screen and (min-width: 700px) {
+    .container {
+      font-size: 20px;
+    }
+  }

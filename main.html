@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To The Moon</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <main>
+        <video muted loop id="myVideo">
+            <source src="background.mp4" type="video/mp4">
+          </video>
+        
+
+          
+            <div class="container">
+              <p class="letter letter-M">M</p>
+              
+              <div class="moon">
+                <div class="orbit">
+                  <p>O</p>
+                </div>
+              </div>
+              <p class="letter letter-N">N</p>
+            </div>
+
+        <div class="game">
+
+            <p class = "nums" id="1%">6%</p>
+            <p class = "nums" id="2%">5%</p>
+            <p class = "nums" id="3%">4%</p>
+            <p class = "nums" id="4%">3%</p>
+            <p class = "nums" id="5%">2%</p>
+            <p class = "nums" id="1%">1%</p>
+
+            <p class = "nums" id="1%">0%</p>
+
+        
+         </div>
+
+        </div>
+        <div class="rock">
+            <img class="rocket_img" src="rocket_rocket.gif" alt="Italian Trulli">
+           </div>
+
+        <div class="buttons">
+            <button class = "bet_button" onclick="controller()">         <img class="button_gif"src="rocket_button.svg" alt="Italian Trulli">
+            </button>
+            <button class = "cash_out_button" onclick="stopButton()"> <img class="stop_sign"src="stop-sign.svg" alt="Italian Trulli"></button>
+        </div>
+       
+    </main>
+	<script src="main.js"></script>
+  </body>
+</html>
